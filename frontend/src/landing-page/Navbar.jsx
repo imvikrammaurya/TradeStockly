@@ -1,7 +1,13 @@
 export default function Navbar() {
   return (
-    <div>
-      <h1 className="font-bold bg-red-500 hover:bg-green-400">Navbar</h1>
-    </div>
+    <nav>
+      <a href="#">
+        <img
+          src="public\media\images\logo_svg.svg"
+          className="w-[10%]"
+          alt=""
+        />
+      </a>
+    </nav>
   );
 }

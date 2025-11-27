@@ -46,7 +46,7 @@ export default function Stats() {
               <i className="fa-solid fa-arrow-right-long"></i>
             </a>
             <a href="" className="text-blue-400 font-medium text-[1.2rem]">
-              Try Kite
+              Try Kite demo <i className="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
         </div>
