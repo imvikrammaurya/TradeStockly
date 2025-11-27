@@ -1,7 +1,21 @@
 export default function Hero() {
   return (
     <>
-      <h1>Hero</h1>
+      <div className="container mt-auto mx-auto ">
+        <div className="flex flex-col items-center">
+          <img src="media/images/homeHero.png" className="mb-12" alt="" />
+          <h3 className="mt-12 font-semibold text-4xl mb-4">
+            Invest in everything
+          </h3>
+          <p className="mb-4">
+            Online platform to invest in stocks, derivatives, mutual funds, and
+            more
+          </p>
+          <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-16 rounded mb-12">
+            Signup Now
+          </button>
+        </div>
+      </div>
     </>
   );
 }
