@@ -18,7 +18,7 @@ export default function Awards() {
             Largest stock broker in India
           </h3>
           <p className="text-[20px] mb-10">
-            2+ million Zerodha clients contribute to over 15% of all retail
+            2+ million TradeStockly clients contribute to over 15% of all retail
             order volumes in India daily by trading and investing in:
           </p>
 

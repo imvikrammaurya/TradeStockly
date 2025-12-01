@@ -7,8 +7,8 @@ export default function Stats() {
 
           <h4 className="text-3xl font-medium mt-20">Customer-first always</h4>
           <p className="text-[1.2rem] text-gray-600 mt-2">
-            That's why 1.3+ crore customers trust Zerodha with ₹3.5+ lakh crores
-            worth of equity investments.
+            That's why 1.3+ crore customers trust TradeStockly with ₹3.5+ lakh
+            crores worth of equity investments.
           </p>
 
           <h4 className="text-3xl font-medium mt-8">No spam or gimmicks</h4>
@@ -17,7 +17,9 @@ export default function Stats() {
             High quality apps that you use at your pace, the way you like.
           </p>
 
-          <h4 className="text-3xl font-medium mt-8">The Zerodha universe</h4>
+          <h4 className="text-3xl font-medium mt-8">
+            The TradeStockly universe
+          </h4>
           <p className="text-[1.2rem] text-gray-600 mt-2">
             Not just an app, but a whole ecosystem. Our investments in 30+
             fintech startups offer you tailored services specific to your needs.
