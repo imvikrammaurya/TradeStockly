@@ -7,7 +7,7 @@ export default function AboutPage() {
     <>
       <Navbar />
       <Hero />
-      <Team />
+      <h1>About</h1>
       <Footer />
     </>
   );

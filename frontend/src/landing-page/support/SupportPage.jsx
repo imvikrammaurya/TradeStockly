@@ -8,7 +8,7 @@ export default function SupportPage() {
     <>
       <Navbar />
       <Hero />
-      <SupportPage />
+      <h1>hello</h1>
       <Footer />
     </>
   );

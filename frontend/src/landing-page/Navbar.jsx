@@ -1,28 +1,39 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Navbar() {
-  const ROUTES = ["Signup", "About", "Products", "Pricing", "Support"];
+  // 1. Updated to objects to match labels with specific paths in main.jsx
+  const navLinks = [
+    { label: "Signup", path: "/Signup" },
+    { label: "About", path: "/about" },
+    { label: "Products", path: "/product" }, // Label is 'Products', path is '/product'
+    { label: "Pricing", path: "/pricing" },
+    { label: "Support", path: "/support" },
+  ];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-100">
       <div className="my-2 container flex items-center justify-between mx-auto">
         {/* Nav Logo */}
         <div className="relative-section">
-          <a href="#">
+          {/* 2. Changed 'href' to 'to' (Link uses 'to') */}
+          <Link to="/">
             <img
               src="public\media\images\vikrammaurya_logo.png"
               className="w-[30%] px-10 ml-40"
-              alt=""
+              alt="Logo"
             />
-          </a>
+          </Link>
         </div>
 
         <ul className="flex flex-row gap-3 mr-50 text-gray-600">
-          {ROUTES.map((routes, i) => {
+          {navLinks.map((link) => {
             return (
-              <li className="m-4" key={routes}>
-                {routes}
+              <li className="m-4" key={link.label}>
+                {/* 3. Wrapped text in Link component */}
+                <Link to={link.path} className="hover:text-blue-500">
+                  {link.label}
+                </Link>
               </li>
             );
           })}

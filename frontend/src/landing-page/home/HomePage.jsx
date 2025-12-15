@@ -10,14 +10,12 @@ import Stats from "./Stats";
 export default function HomePage() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Awards />
       <Stats />
       <Pricing />
       <Education />
       <OpenAccount />
-      <Footer />
     </div>
   );
 }
