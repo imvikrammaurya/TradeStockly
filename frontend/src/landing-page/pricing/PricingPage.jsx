@@ -6,10 +6,8 @@ import Hero from "./Hero";
 export default function PricingPage() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Brokerage />
-      <Footer />
     </>
   );
 }
