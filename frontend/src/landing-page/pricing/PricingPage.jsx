@@ -1,6 +1,7 @@
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import Brokerage from "./Brokerage";
+import ChargesExplained from "./ChargesExplained";
 import Hero from "./Hero";
 import Pricing from "./pricing";
 
@@ -10,6 +11,7 @@ export default function PricingPage() {
       <Hero />
       <Pricing />
       <Brokerage />
+      <ChargesExplained />
     </>
   );
 }
