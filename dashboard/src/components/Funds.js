@@ -5,9 +5,15 @@ const Funds = () => {
   return (
     <>
       <div className="w-full text-right flex items-center justify-end">
-        <p className="text-[0.8rem] text-gray-400 mr-2">Instant, zero-cost fund transfers with UPI </p>
-        <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-green-500 hover:bg-green-400">Add funds</Link>
-        <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-blue-500 hover:bg-blue-400">Withdraw</Link>
+        <p className="text-[0.8rem] text-gray-400 mr-2">
+          Instant, zero-cost fund transfers with UPI{" "}
+        </p>
+        <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-green-500 hover:bg-green-400">
+          Add funds
+        </Link>
+        <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-blue-500 hover:bg-blue-400">
+          Withdraw
+        </Link>
       </div>
 
       <div className="w-full flex items-center justify-evenly mt-10">
@@ -19,7 +25,7 @@ const Funds = () => {
           <div className="border border-gray-200 p-[5%_8%]">
             <div className="flex items-center justify-between mb-5">
               <p className="text-base text-gray-400">Available margin</p>
-              <p className="text-2xl text-gray-800 text-blue-500">4,043.10</p>
+              <p className="text-2xl text-gray-800 ">4,043.10</p>
             </div>
             <div className="flex items-center justify-between mb-5">
               <p className="text-base text-gray-400">Used margin</p>
@@ -60,7 +66,9 @@ const Funds = () => {
             </div>
             <hr className="border-none bg-gray-300 h-px mb-5" />
             <div className="flex items-center justify-between mb-5">
-              <p className="text-base text-gray-400">Collateral (Liquid funds)</p>
+              <p className="text-base text-gray-400">
+                Collateral (Liquid funds)
+              </p>
               <p>0.00</p>
             </div>
             <div className="flex items-center justify-between mb-5">
@@ -76,8 +84,12 @@ const Funds = () => {
 
         <div className="basis-[48%] text-left">
           <div className="p-[2%_8%] text-center">
-            <p className="mb-[10%] text-gray-400">You don't have a commodity account</p>
-            <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-blue-500 hover:bg-blue-400">Open Account</Link>
+            <p className="mb-[10%] text-gray-400">
+              You don't have a commodity account
+            </p>
+            <Link className="no-underline px-5 py-2.5 rounded text-white mx-0.5 bg-blue-500 hover:bg-blue-400">
+              Open Account
+            </Link>
           </div>
         </div>
       </div>
