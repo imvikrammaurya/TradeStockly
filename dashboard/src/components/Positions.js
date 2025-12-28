@@ -44,6 +44,9 @@ const Positions = () => {
                   {stock.product}
                 </td>
                 <td className="text-right px-2.5 py-4 text-gray-500 font-light text-xs">
+                  {stock.name}
+                </td>
+                <td className="text-right px-2.5 py-4 text-gray-500 font-light text-xs">
                   {stock.qty}
                 </td>
                 <td className="text-right px-2.5 py-4 text-gray-500 font-light text-xs">
@@ -52,19 +55,13 @@ const Positions = () => {
                 <td className="text-right px-2.5 py-4 text-gray-500 font-light text-xs border-r border-gray-200">
                   {stock.price.toFixed(2)}
                 </td>
-                <td className="text-right px-2.5 py-4 text-gray-500 font-light text-xs">
-                  {curValue.toFixed(2)}
-                </td>
+
                 <td
                   className={`text-right px-2.5 py-4 text-gray-500 font-light text-xs ${profClass}`}
                 >
                   {(curValue - stock.avg * stock.qty).toFixed(2)}
                 </td>
-                <td
-                  className={`text-right px-2.5 py-4 text-gray-500 font-light text-xs ${profClass}`}
-                >
-                  {stock.net}
-                </td>
+
                 <td
                   className={`text-right px-2.5 py-4 text-gray-500 font-light text-xs ${dayClass}`}
                 >
