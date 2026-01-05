@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import GeneralContext from "./GeneralContext";
 import { watchlist } from "../data/data";
 import {
   KeyboardArrowDown,
@@ -36,9 +37,13 @@ const WatchList = () => {
 export default WatchList;
 
 const WatchListItem = ({ stock }) => {
-  // Determine color based on up/down status
-  // Using 'text-emerald-500' for a nicer green and 'text-red-500' for red
   const textColor = stock.isDown ? "text-red-500" : "text-emerald-500";
+
+  const { openBuyWindow } = useContext(GeneralContext);
+
+  const handleBuyClick = () => {
+    openBuyWindow(stock.name);
+  };
 
   return (
     <li className="relative flex items-center justify-between p-4 border-b border-gray-100 hover:bg-gray-50 cursor-pointer group transition-colors duration-200">
@@ -61,7 +66,10 @@ const WatchListItem = ({ stock }) => {
       {/* Right Side: Action Buttons (Visible ONLY on Hover) */}
       <div className="hidden group-hover:flex items-center gap-2 absolute right-4 top-1/2 -translate-y-1/2">
         <Tooltip title="Buy (B)" placement="top" arrow>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white rounded-[2px] w-8 h-7 flex items-center justify-center text-xs font-medium transition-colors">
+          <button
+            onClick={handleBuyClick}
+            className="bg-blue-500 hover:bg-blue-600 text-white rounded-[2px] w-8 h-7 flex items-center justify-center text-xs font-medium transition-colors"
+          >
             B
           </button>
         </Tooltip>
