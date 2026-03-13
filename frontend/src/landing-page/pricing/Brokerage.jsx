@@ -2,7 +2,7 @@ export default function Brokerage() {
   return (
     <div className="container mx-auto px-4 my-20">
       {/* 1. Account Opening Charges */}
-      <div className="mx-70 mb-16">
+      <div className="mx-0 sm:mx-70 mb-16">
         <h2 className="text-xl text-gray-800 mb-6 font-normal">
           Charges for account opening
         </h2>
@@ -52,7 +52,7 @@ export default function Brokerage() {
       </div>
 
       {/* 2. Demat AMC */}
-      <div className="mx-70 mb-16">
+      <div className="mx-0 sm:mx-70 mb-16">
         <h2 className="text-xl text-gray-800 mb-6 font-normal">
           Demat AMC (Annual Maintenance Charge)
         </h2>
@@ -106,7 +106,7 @@ export default function Brokerage() {
       </div>
 
       {/* 3. Optional Services */}
-      <div className="mx-70 ">
+      <div className="mx-0 sm:mx-70 ">
         <h2 className="text-xl text-gray-800 mb-6 font-normal">
           Charges for optional value added services
         </h2>

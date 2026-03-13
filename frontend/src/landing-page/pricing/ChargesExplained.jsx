@@ -4,7 +4,7 @@ export default function ChargesExplained() {
   return (
     <div className="container mx-auto px-4 my-20">
       {/* Wrapper to align with previous components */}
-      <div className="mx-70">
+      <div className="mx-0 sm:mx-70">
         <h3 className="text-xl text-gray-800 mb-10 font-normal">
           Charges explained
         </h3>

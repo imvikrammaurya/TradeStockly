@@ -12,7 +12,7 @@ export default function Universe() {
             Extend your trading and investment experience even further with our
             partner platforms
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 mt-8 w-[60%]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 sm:gap-x-12 gap-y-8 sm:gap-y-12 mt-8 w-full sm:w-[60%]">
             <UniverseComponents
               imageUrl="\public\media\images\VM_logo.png"
               productDescription="Our asset management venture that is creating simple and transparent index funds to help you save for your goals."

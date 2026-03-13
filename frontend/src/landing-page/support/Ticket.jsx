@@ -73,35 +73,35 @@ export default function Ticket() {
   ];
 
   return (
-    <div className="container mx-auto px-4 my-20">
-      <div className="mx-70">
+    <div className="container mx-auto px-4 my-10 sm:my-20">
+      <div className="mx-0 sm:mx-70">
         {/* --- HEADER --- */}
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl text-gray-700 font-semibold ">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+          <h2 className="text-3xl sm:text-4xl text-gray-700 font-semibold ">
             Support Portal
           </h2>
-          <button className="bg-[#387ED1] border rounded-[5px] p-2 text-xl text-white font-medium">
+          <button className="bg-[#387ED1] border rounded-[5px] p-2 text-lg sm:text-xl text-white font-medium w-full sm:w-auto">
             Track tickets
           </button>
         </div>
 
         {/* --- SEARCH BAR --- */}
-        <div className="relative mb-14 border-b border-gray-200 pb-10">
-          <h3 className="text-xl text-gray-800 font-normal mb-6"></h3>
+        <div className="relative mb-8 sm:mb-14 border-b border-gray-200 pb-5 sm:pb-10">
+          <h3 className="text-lg sm:text-xl text-gray-800 font-normal mb-6"></h3>
           <div className="relative">
             <input
               type="text"
               placeholder="Eg: How do I activate F&O, why is my order rejected ..."
-              className="w-full py-4 pl-14 pr-4 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 shadow-sm text-gray-600"
+              className="w-full py-3 sm:py-4 pl-12 sm:pl-14 pr-4 border border-gray-300 rounded-sm focus:outline-none focus:border-blue-500 shadow-sm text-gray-600"
             />
-            <i className="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            <i className="fa-solid fa-magnifying-glass absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 text-gray-400"></i>
           </div>
         </div>
 
         {/* --- MAIN CONTENT GRID --- */}
-        <div className="flex flex-row gap-12">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
           {/* LEFT COLUMN: Accordion Menu */}
-          <div className="w-2/3 flex flex-col gap-4">
+          <div className="w-full sm:w-2/3 flex flex-col gap-4">
             {supportTopics.map((topic, index) => {
               const isOpen = openIndex === index;
 
@@ -153,7 +153,7 @@ export default function Ticket() {
           </div>
 
           {/* RIGHT COLUMN: Featured & Quick Links */}
-          <div className="w-1/3 flex flex-col gap-8">
+          <div className="w-full sm:w-1/3 flex flex-col gap-8">
             {/* Featured Box (Orange bg) */}
             <div className="bg-orange-50 border-l-4 border-orange-400 p-4">
               <h4 className="text-lg font-medium text-gray-800 mb-4 flex items-center gap-2">

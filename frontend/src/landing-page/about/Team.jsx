@@ -2,19 +2,21 @@ export default function Team() {
   return (
     <>
       <div className=" w-full ">
-        <div className="container mx-auto px-98">
-          <div className="flex flex-row items-center content-center mt-20">
-            <div className="w-1/3 flex flex-col items-center">
+        <div className="container mx-auto px-4 sm:px-98">
+          <div className="flex flex-col sm:flex-row items-center content-center mt-10 sm:mt-20">
+            <div className="w-full sm:w-1/3 flex flex-col items-center">
               <img
                 src=".\public\media\images\s.png"
                 alt=""
-                className="rounded-full grayscale size-50 mb-5"
+                className="rounded-full grayscale size-32 sm:size-50 mb-5"
               />
               <p>Nithin Kamath</p>
               <p className="text-[70%] mt-3">Founder, CEO</p>
             </div>
-            <div className="w-2/3 p-10">
-              <h4 className="mb-15 font-semibold text-3xl">People</h4>
+            <div className="w-full sm:w-2/3 p-4 sm:p-10">
+              <h4 className="mb-8 sm:mb-15 font-semibold text-2xl sm:text-3xl">
+                People
+              </h4>
               <p className="mb-5">
                 Nithin bootstrapped and founded Zerodha in 2010 to overcome the
                 hurdles he faced during his decade long stint as a trader.

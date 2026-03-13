@@ -9,7 +9,7 @@ export default function Pricing() {
 
   return (
     <div className="container mx-auto px-4 my-10">
-      <div className="flex flex-col items-center gap-8 justify-center mx-70">
+      <div className="flex flex-col items-center gap-8 justify-center mx-0 sm:mx-70">
         {/* --- TAB HEADERS --- */}
         <div className="flex gap-12 mb-8 border-b border-gray-200 pb-2 items-center justify-start">
           <h3

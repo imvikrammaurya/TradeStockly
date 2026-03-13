@@ -54,8 +54,8 @@ export default function Footer() {
   return (
     <>
       <div className="bg-[#FBFBFB] border-t border-gray-100 mt-20 ">
-        <div className="container mx-auto px-10 pt-10">
-          <div className="grid grid-cols-4 gap-12 justify-center mb-10 ml-20">
+        <div className="container mx-auto px-4 sm:px-10 pt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 sm:gap-12 justify-center mb-10 ml-0 sm:ml-20">
             <ul className="mt-6 text-sm text-gray-600 mb-2">
               {/* 1st list item */}
               <li>
